@@ -42,4 +42,10 @@ curl -X POST \
   -d "@json/create-invasives-store.json" \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/datastores"
 
+# Create NRD Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-nrd-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/WHSE_ADMIN_BOUNDARIES.ADM_NR_DISTRICTS_SPG"
+
 touch success
