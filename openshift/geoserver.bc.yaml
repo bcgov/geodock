@@ -1,0 +1,75 @@
+kind: Template
+apiVersion: template.openshift.io/v1
+metadata:
+  name: geoserver-build
+objects:
+  - apiVersion: image.openshift.io/v1
+    kind: ImageStream
+    metadata:
+      name: '${NAME}'
+    spec:
+      lookupPolicy:
+        local: false
+  - apiVersion: v1
+    kind: ImageStreamTag
+    lookupPolicy:
+      local: false
+    metadata:
+      name: 'geoserver:${GS_VERSION}'
+    tag:
+      from:
+        kind: DockerImage
+        name: 'registry.hub.docker.com/library/debian:bullseye'
+      importPolicy:
+        scheduled: true
+      name: 'debian:bullseye'
+      referencePolicy:
+        type: Source
+  - apiVersion: v1
+    kind: ImageStream
+    metadata:
+      name: '${NAME}'
+    spec:
+      lookupPolicy:
+        local: false
+  - apiVersion: v1
+    kind: BuildConfig
+    metadata:
+      name: '${NAME}'
+    spec:
+      output:
+        to:
+          kind: ImageStreamTag
+          name: '${NAME}:${GS_VERSION}'
+      source:
+        contextDir: /
+        git:
+          ref: '${GIT_REF}'
+          uri: '${GIT_URI}'
+        type: Git
+      strategy:
+        dockerStrategy:
+          from:
+            kind: ImageStreamTag
+            name: 'geoserver:${GS_VERSION}'
+        type: Docker
+      triggers:
+        - type: ConfigChange
+        - imageChange: {}
+          type: ImageChange
+parameters:
+  - name: NAME
+    value: geoserver
+  - name: GIT_URI
+    value: 'https://github.com/bcgov/geodock.git'
+  - name: GIT_REF
+    value: master
+  - name: GS_VERSION
+    value: '1.0'
+labels:
+  app: '${NAME}'
+  app.kubernetes.io/component: server
+  app.kubernetes.io/managed-by: template
+  app.kubernetes.io/name: '${NAME}'
+  app.kubernetes.io/version: '${GS_VERSION}'
+  phase: build
