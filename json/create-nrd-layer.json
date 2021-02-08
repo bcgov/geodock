@@ -3,7 +3,7 @@
         "description": "",
         "enabled": true,
         "preferredFormat": "image/png",
-        "name": "TESTWHSE_ADMIN_BOUNDARIES.ADM_NR_DISTRICTS_SPG",
+        "name": "WHSE_ADMIN_BOUNDARIES.ADM_NR_DISTRICTS_SPG",
         "nativeName": "pub:WHSE_ADMIN_BOUNDARIES.ADM_NR_DISTRICTS_SPG",
         "srs": "EPSG:4326"
     }

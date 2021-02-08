@@ -42,6 +42,9 @@ curl -X POST \
   -d "@json/create-invasives-store.json" \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/datastores"
 
+# Wait a bit for the data store to get set up.
+sleep 5
+
 # Create NRD Layer
 curl -X POST \
   --header 'Content-Type: application/json' \
