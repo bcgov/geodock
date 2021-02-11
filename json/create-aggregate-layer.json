@@ -3,38 +3,31 @@
         "attributes": {
             "attribute": [
                 {
-                    "binding": "java.math.BigDecimal",
+                    "binding": "java.lang.String",
                     "maxOccurs": 1,
                     "minOccurs": 0,
-                    "name": "objectid",
+                    "name": "pit_number",
                     "nillable": true
                 },
                 {
                     "binding": "java.lang.String",
                     "maxOccurs": 1,
                     "minOccurs": 0,
-                    "name": "ipma",
+                    "name": "pit_name",
                     "nillable": true
                 },
                 {
                     "binding": "java.lang.String",
                     "maxOccurs": 1,
                     "minOccurs": 0,
-                    "name": "agency_cd",
+                    "name": "layer",
                     "nillable": true
                 },
                 {
                     "binding": "java.lang.String",
                     "maxOccurs": 1,
                     "minOccurs": 0,
-                    "name": "dropdown_n",
-                    "nillable": true
-                },
-                {
-                    "binding": "java.lang.String",
-                    "maxOccurs": 1,
-                    "minOccurs": 0,
-                    "name": "agency",
+                    "name": "path",
                     "nillable": true
                 },
                 {
@@ -47,24 +40,31 @@
             ]
         },
         "enabled": true,
+        "keywords": {
+            "string": [
+                "features",
+                "aggregate_tenures"
+            ]
+        },
         "latLonBoundingBox": {
             "crs": "EPSG:4326",
-            "maxx": -113.929107666016,
-            "maxy": 60.0569534301758,
-            "minx": -139.186340332031,
-            "miny": 48.9422760009766
+            "maxx": -114.530334472656,
+            "maxy": 60.0563812255859,
+            "minx": -133.903503417969,
+            "miny": 48.3180236816406
         },
         "maxFeatures": 0,
-        "name": "invasive_plant_management_areas",
+        "name": "aggregate_tenures",
         "nativeBoundingBox": {
             "crs": "EPSG:4326",
-            "maxx": -113.929107666016,
-            "maxy": 60.0569534301758,
-            "minx": -139.186340332031,
-            "miny": 48.9422760009766
+            "maxx": -114.530334472656,
+            "maxy": 60.0563812255859,
+            "minx": -133.903503417969,
+            "miny": 48.3180236816406
         },
-        "nativeName": "invasive_plant_management_areas",
+        "nativeName": "aggregate_tenures",
+        "numDecimals": 0,
         "srs": "EPSG:4326",
-        "title": "Invasive Plant Management Areas"
+        "title": "Aggregate Tenures"
     }
 }
