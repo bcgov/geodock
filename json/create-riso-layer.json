@@ -1,0 +1,77 @@
+{
+    "featureType": {
+        "attributes": {
+            "attribute": [
+                {
+                    "binding": "java.lang.Integer",
+                    "maxOccurs": 1,
+                    "minOccurs": 0,
+                    "name": "ogc_fid",
+                    "nillable": true
+                },
+                {
+                    "binding": "java.lang.Integer",
+                    "maxOccurs": 1,
+                    "minOccurs": 0,
+                    "name": "objectid",
+                    "nillable": true
+                },
+                {
+                    "binding": "java.lang.String",
+                    "maxOccurs": 1,
+                    "minOccurs": 0,
+                    "name": "agency_cd",
+                    "nillable": true
+                },
+                {
+                    "binding": "java.lang.String",
+                    "maxOccurs": 1,
+                    "minOccurs": 0,
+                    "name": "dropdown_n",
+                    "nillable": true
+                },
+                {
+                    "binding": "java.lang.String",
+                    "maxOccurs": 1,
+                    "minOccurs": 0,
+                    "name": "layer",
+                    "nillable": true
+                },
+                {
+                    "binding": "java.lang.String",
+                    "maxOccurs": 1,
+                    "minOccurs": 0,
+                    "name": "agency",
+                    "nillable": true
+                },
+                {
+                    "binding": "org.locationtech.jts.geom.MultiPolygon",
+                    "maxOccurs": 1,
+                    "minOccurs": 0,
+                    "name": "geom",
+                    "nillable": true
+                }
+            ]
+        },
+        "enabled": true,
+        "latLonBoundingBox": {
+            "crs": "EPSG:4326",
+            "maxx": -113.929107666016,
+            "maxy": 60.0636787414551,
+            "minx": -139.186340332031,
+            "miny": 48.1659355163574
+        },
+        "name": "regional_invasive_species_organization_areas",
+        "nativeBoundingBox": {
+            "crs": "EPSG:4326",
+            "maxx": -113.929107666016,
+            "maxy": 60.0636787414551,
+            "minx": -139.186340332031,
+            "miny": 48.1659355163574
+        },
+        "nativeName": "regional_invasive_species_organization_areas",
+        "numDecimals": 0,
+        "srs": "EPSG:4326",
+        "title": "Regional Invasive Species Organization Areas"
+    }
+}

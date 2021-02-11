@@ -49,4 +49,16 @@ curl -X POST \
   -d "@json/create-nrd-layer.json" \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
 
+# Create RISO Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-riso-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/datastores/Invasives/featuretypes/"
+
+# Create IPMA Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-ipma-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/datastores/Invasives/featuretypes/"
+
 touch data_dir/www/success
