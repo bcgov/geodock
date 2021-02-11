@@ -49,4 +49,4 @@ curl -X POST \
   -d "@json/create-nrd-layer.json" \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
 
-touch success
+touch data_dir/www/success
