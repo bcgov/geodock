@@ -45,14 +45,14 @@ oc delete all --selector app=invasivesbci-geoserver-dev
 ```
 
 ## Configuring
-The general workflow is as follow
+The general workflow is as follows:
 - Use the Geoserver GUI to configure and add services. 
 - Use the API to extract the JSON representation of the configuration. 
 - Save this JSON in the _/JSON_ directory
 - Add a command within the config script that sends this JSON to the API on POD initiation
 
 ### Example Configuration Workflow
-Request to harvest the JSON for a Layer
+Request to harvest the JSON for a Layer:
 ```bash
 curl \
   --header 'Content-Type: application/json' \
