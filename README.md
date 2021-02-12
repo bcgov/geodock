@@ -7,7 +7,7 @@ docker build -t geodock:1.0 ./
 ```
 
 ## Running
-Geoserver comes with an *admin* account, password *geoserver*. You can change this automatically by creating a file *.env* and putting in the following:
+Geoserver comes with an *admin* account, password *geoserver*. You can change this automatically by creating a file *.env/local.sh* and putting in the following:
 ```bash
 ADMIN_PASS=new_password
 ```
