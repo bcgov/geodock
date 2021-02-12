@@ -43,3 +43,26 @@ oc get all --selector app=invasivesbci-geoserver-dev
 # If everything found can be deleted
 oc delete all --selector app=invasivesbci-geoserver-dev
 ```
+
+## Configuring
+The general workflow is as follow
+- Use the Geoserver GUI to configure and add services. 
+- Use the API to extract the JSON representation of the configuration. 
+- Save this JSON in the _/JSON_ directory
+- Add a command within the config script that sends this JSON to the API on POD initiation
+
+### Example Configuration Workflow
+Request to harvest the JSON for a Layer
+```bash
+curl \
+  --header 'Content-Type: application/json' \
+  -L "http://admin:data4me@localhost:8080/geoserver/rest/workspaces/invasives/datastores/Invasives/featuretypes/aggregate_tenures.json"
+```
+
+Save the output in _json/create-aggregate-layer.json_ then use the following command, or put it in the _config.sh_ file as follows:
+```bash
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-aggregate-layer.json" \
+  -L "http://admin:data4me@localhost:8080/geoserver/rest/workspaces/invasives/datastores/Invasives/featuretypes/"
+```
