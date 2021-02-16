@@ -1,0 +1,10 @@
+{
+    "wmsLayer": {
+        "description": "",
+        "enabled": true,
+        "preferredFormat": "image/png",
+        "name": "WHSE_WATER_MANAGEMENT.GW_WATER_WELLS_WRBC_SVW",
+        "nativeName": "pub:WHSE_WATER_MANAGEMENT.GW_WATER_WELLS_WRBC_SVW",
+        "srs": "EPSG:4326"
+    }
+}

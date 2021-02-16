@@ -42,12 +42,25 @@ curl -X POST \
   -d "@json/create-invasives-store.json" \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/datastores"
 
-# TODO: Could possibly loop through these
+############# BCGW WMS Proxy Layers #############
 # Create NRD Layer
 curl -X POST \
   --header 'Content-Type: application/json' \
   -d "@json/create-nrd-layer.json" \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
+
+# Create Well Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-well-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
+
+# Create Streams Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-fwa-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
+#################################################
 
 # Create RISO Layer
 curl -X POST \
