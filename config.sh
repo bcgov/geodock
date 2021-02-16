@@ -58,7 +58,13 @@ curl -X POST \
 # Create Streams Layer
 curl -X POST \
   --header 'Content-Type: application/json' \
-  -d "@json/create-fwa-layer.json" \
+  -d "@json/create-stream-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
+
+# Create Wetland Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-wetland-layer.json" \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
 #################################################
 

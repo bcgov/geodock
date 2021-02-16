@@ -1,0 +1,10 @@
+{
+    "wmsLayer": {
+        "description": "",
+        "enabled": true,
+        "preferredFormat": "image/png",
+        "name": "WHSE_BASEMAPPING.FWA_WETLANDS_POLY",
+        "nativeName": "pub:WHSE_BASEMAPPING.FWA_WETLANDS_POLY",
+        "srs": "EPSG:4326"
+    }
+}
