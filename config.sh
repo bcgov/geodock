@@ -68,6 +68,8 @@ curl -X POST \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
 #################################################
 
+
+############# Invasives WMS Layers #############
 # Create RISO Layer
 curl -X POST \
   --header 'Content-Type: application/json' \
@@ -80,4 +82,12 @@ curl -X POST \
   -d "@json/create-ipma-layer.json" \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/datastores/Invasives/featuretypes/"
 
+# Create Aggregate Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-aggregate-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/datastores/Invasives/featuretypes/"
+################################################
+
+# Signal that we are ready.
 touch data_dir/www/success
