@@ -1,0 +1,10 @@
+{
+    "wmsLayer": {
+        "description": "",
+        "enabled": true,
+        "preferredFormat": "image/png",
+        "name": "WHSE_TANTALIS.TA_SURFACE_OWNERSHIP_SVW",
+        "nativeName": "pub:WHSE_TANTALIS.TA_SURFACE_OWNERSHIP_SVW",
+        "srs": "EPSG:4326"
+    }
+}

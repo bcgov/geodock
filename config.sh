@@ -66,6 +66,12 @@ curl -X POST \
   --header 'Content-Type: application/json' \
   -d "@json/create-wetland-layer.json" \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
+
+# Create Ownership Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-ownership-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
 #################################################
 
 
