@@ -84,6 +84,12 @@ curl -X POST \
   --header 'Content-Type: application/json' \
   -d "@json/create-regional-districts-layer.json" \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
+
+# Create Road Feature Inventory Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-rfi-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
 #################################################
 
 
