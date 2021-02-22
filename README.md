@@ -34,7 +34,7 @@ docker system prune -a
 ## Running in OpenShift
 ```bash
 oc new-app --name=invasivesbci-geoserver-dev \
---env-file=.env/dev.sh https://github.com/popkinj/geodock.git
+--env-file=.env/dev.sh https://github.com/bcgov/geodock.git
 oc expose svc/invasivesbci-geoserver-dev
 ```
 
