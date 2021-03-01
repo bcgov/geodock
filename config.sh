@@ -90,6 +90,24 @@ curl -X POST \
   --header 'Content-Type: application/json' \
   -d "@json/create-rfi-layer.json" \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
+
+# Create BEC Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-bec-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
+
+# Create MOTI Region Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-moti-region-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
+
+# Create MOTI District Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-moti-district-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
 #################################################
 
 
