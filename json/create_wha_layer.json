@@ -1,0 +1,10 @@
+{
+    "wmsLayer": {
+        "description": "",
+        "enabled": true,
+        "preferredFormat": "image/png",
+        "name": "WHSE_WILDLIFE_MANAGEMENT.WCP_WILDLIFE_HABITAT_AREA_POLY",
+        "nativeName": "pub:WHSE_WILDLIFE_MANAGEMENT.WCP_WILDLIFE_HABITAT_AREA_POLY",
+        "srs": "EPSG:4326"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "wmsLayer": {
+        "description": "",
+        "enabled": true,
+        "preferredFormat": "image/png",
+        "name": "WHSE_LAND_USE_PLANNING.RMP_OGMA_LEGAL_CURRENT_SVW",
+        "nativeName": "pub:WHSE_LAND_USE_PLANNING.RMP_OGMA_LEGAL_CURRENT_SVW",
+        "srs": "EPSG:4326"
+    }
+}

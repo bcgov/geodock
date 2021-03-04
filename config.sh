@@ -108,6 +108,18 @@ curl -X POST \
   --header 'Content-Type: application/json' \
   -d "@json/create-moti-district-layer.json" \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
+
+# Create OGMA Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-ogma-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
+
+# Create WHA Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-wha-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
 #################################################
 
 
