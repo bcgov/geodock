@@ -1,0 +1,10 @@
+{
+    "wmsLayer": {
+        "description": "",
+        "enabled": true,
+        "preferredFormat": "image/png",
+        "name": "WHSE_ADMIN_BOUNDARIES.CLAB_INDIAN_RESERVES",
+        "nativeName": "pub:WHSE_ADMIN_BOUNDARIES.CLAB_INDIAN_RESERVES",
+        "srs": "EPSG:4326"
+    }
+}
