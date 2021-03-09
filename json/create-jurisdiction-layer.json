@@ -43,7 +43,7 @@
         "keywords": {
             "string": [
                 "features",
-                "jurisdictions"
+                "jurisdiction"
             ]
         },
         "latLonBoundingBox": {
@@ -54,7 +54,7 @@
             "miny": 48.2364807128906
         },
         "maxFeatures": 0,
-        "name": "jurisdictions",
+        "name": "jurisdiction",
         "nativeBoundingBox": {
             "crs": "EPSG:4326",
             "maxx": -114.537467956543,
@@ -62,7 +62,7 @@
             "minx": -132.470626831055,
             "miny": 48.2364807128906
         },
-        "nativeName": "jurisdictions",
+        "nativeName": "jurisdiction",
         "numDecimals": 0,
         "srs": "EPSG:4326",
         "title": "Jurisdictions"
