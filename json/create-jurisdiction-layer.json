@@ -1,0 +1,70 @@
+{
+    "featureType": {
+        "attributes": {
+            "attribute": [
+                {
+                    "binding": "java.lang.String",
+                    "maxOccurs": 1,
+                    "minOccurs": 0,
+                    "name": "type",
+                    "nillable": true
+                },
+                {
+                    "binding": "java.lang.String",
+                    "maxOccurs": 1,
+                    "minOccurs": 0,
+                    "name": "name",
+                    "nillable": true
+                },
+                {
+                    "binding": "java.lang.String",
+                    "maxOccurs": 1,
+                    "minOccurs": 0,
+                    "name": "jurisdictn",
+                    "nillable": true
+                },
+                {
+                    "binding": "java.lang.Integer",
+                    "maxOccurs": 1,
+                    "minOccurs": 0,
+                    "name": "draworder",
+                    "nillable": true
+                },
+                {
+                    "binding": "org.locationtech.jts.geom.MultiPolygon",
+                    "maxOccurs": 1,
+                    "minOccurs": 0,
+                    "name": "geom",
+                    "nillable": true
+                }
+            ]
+        },
+        "enabled": true,
+        "keywords": {
+            "string": [
+                "features",
+                "jurisdictions"
+            ]
+        },
+        "latLonBoundingBox": {
+            "crs": "EPSG:4326",
+            "maxx": -114.537467956543,
+            "maxy": 58.7160415649414,
+            "minx": -132.470626831055,
+            "miny": 48.2364807128906
+        },
+        "maxFeatures": 0,
+        "name": "jurisdictions",
+        "nativeBoundingBox": {
+            "crs": "EPSG:4326",
+            "maxx": -114.537467956543,
+            "maxy": 58.7160415649414,
+            "minx": -132.470626831055,
+            "miny": 48.2364807128906
+        },
+        "nativeName": "jurisdictions",
+        "numDecimals": 0,
+        "srs": "EPSG:4326",
+        "title": "Jurisdictions"
+    }
+}

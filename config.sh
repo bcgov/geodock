@@ -153,6 +153,12 @@ curl -X POST \
   --header 'Content-Type: application/json' \
   -d "@json/create-aggregate-layer.json" \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/datastores/Invasives/featuretypes/"
+
+# Create Jurisdiction Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-jurisdiction-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/datastores/Invasives/featuretypes/"
 ################################################
 
 # Signal that we are ready.
