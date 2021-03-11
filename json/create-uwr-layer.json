@@ -1,0 +1,10 @@
+{
+    "wmsLayer": {
+        "description": "",
+        "enabled": true,
+        "preferredFormat": "image/png",
+        "name": "WHSE_WILDLIFE_MANAGEMENT.WCP_UNGULATE_WINTER_RANGE_SP",
+        "nativeName": "pub:WHSE_WILDLIFE_MANAGEMENT.WCP_UNGULATE_WINTER_RANGE_SP",
+        "srs": "EPSG:4326"
+    }
+}

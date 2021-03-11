@@ -132,6 +132,18 @@ curl -X POST \
   --header 'Content-Type: application/json' \
   -d "@json/create-fnr-layer.json" \
   -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
+
+# Create Ungulate Winter Range Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-uwr-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
+
+# Create National Park Layer
+curl -X POST \
+  --header 'Content-Type: application/json' \
+  -d "@json/create-national-park-layer.json" \
+  -L "http://admin:$ADMIN_PASS@localhost:8080/geoserver/rest/workspaces/invasives/wmsstores/BCGW/wmslayers/"
 #################################################
 
 
